@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thanks.html
 
-Sitemap: https://orchidsolutionselectrical.co.uk/sitemap.xml
+Sitemap: https://orchid-electrical.vercel.app/sitemap.xml
