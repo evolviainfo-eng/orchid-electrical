@@ -1,0 +1,13 @@
+_src/
+_qa/
+_gate/
+_phone/
+_ios/
+.claude/
+src/
+css/src/
+js/src/
+tools/
+brief.json
+gaps.md
+.DS_Store
