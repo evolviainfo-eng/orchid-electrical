@@ -648,3 +648,45 @@ body { background: var(--c-bg); }
   .js:not(.is-ready) .nav { opacity: 1; transform: none; }
   .js [data-hero] .hero__media img { transform: none; transition: none; }
 }
+
+/* ---------- phone pass (PHONE.md): air at the edges, the photo owns the first screen, full-bleed work photos ---------- */
+@media (max-width: 759px) {
+  :root { --gutter: 24px; }
+  .nav { background: transparent; }
+  .nav::after { content: ""; position: absolute; inset: 0 0 -36px; background: linear-gradient(rgb(8 12 17 / .66), rgb(8 12 17 / 0)); pointer-events: none; z-index: -1; }
+  .nav__logo img { height: 50px; }
+  .hero__body { bottom: 84px; }
+  .hero h1 { font-size: clamp(2.2rem, 10.2vw, 2.75rem); line-height: .94; }
+  .hero__lead { margin-top: 12px; }
+  .hero__act { margin-top: 22px; }
+  .hero__proof { bottom: -60px; padding-top: 14px; }
+  .hero__proof a { padding-block: 4px; }
+
+  .after { padding-block: 56px 48px; }
+  .after__lead { margin-top: 14px; }
+  .after__rail { margin-top: 28px; gap: 12px; }
+  .after__card { width: 82vw; }
+  .after__cc { font-size: .9375rem; }
+  .after__all { margin: 22px var(--gutter) 0; display: inline-flex; min-height: 44px; align-items: center; background-position: 0 calc(100% - 10px); }
+
+  .jobs { margin-top: 36px; }
+  .job + .job { margin-top: 56px; }
+  .job__ph { margin-inline: calc(-1 * var(--gutter)); aspect-ratio: 4 / 3; }
+  .job figcaption { padding-top: 18px; }
+  .job__t, .job--ev .job__t { font-size: 1.375rem; }
+  .job p { font-size: 1rem; margin-top: 8px; }
+  .also { margin-top: 64px; }
+  .also__list li { padding: 15px 0; }
+
+  .reviews__h { font-size: 1.75rem; max-width: none; }
+  .reviews__lead p { font-size: 1.375rem; line-height: 1.32; font-weight: 500; letter-spacing: -.015em; }
+  .reviews__stair blockquote p { font-size: 1rem; }
+
+  .quote__tel { font-size: 2.125rem; margin-top: 22px; }
+  .quote__alt { display: grid; gap: 0; margin-top: 10px; }
+  .quote__alt .link { width: fit-content; }
+  .quote__towns { gap: 4px 18px; font-size: 1.125rem; }
+  .quote__towns li:not(:last-child)::after { content: none; }
+  .quote__ph { aspect-ratio: 4 / 3; }
+  .foot__in { gap: 12px; }
+}
