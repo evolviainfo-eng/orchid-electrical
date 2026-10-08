@@ -156,7 +156,7 @@
   var plates = [].slice.call(document.querySelectorAll('.after__imgs img'));
   var cap = document.querySelector('.after__cap [data-cap]');
   var all = document.querySelector('.after__all');
-  var galleryIndex = [3, 4, 5, 6, 7, 8, 9];
+  var galleryIndex = [0, 4, 5, 6, 7, 8, 9];
   var setRow = function (i) {
     rows.forEach(function (r, k) { var on = k === i; r.classList.toggle('is-on', on); r.setAttribute('aria-pressed', String(on)); });
     plates.forEach(function (p, k) { p.classList.toggle('is-on', k === i); });
