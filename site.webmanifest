@@ -1,0 +1,14 @@
+{
+ "name": "Orchid Solutions Electrical Services",
+ "short_name": "Orchid",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  }
+ ],
+ "theme_color": "#0C1219",
+ "background_color": "#0C1219",
+ "display": "browser"
+}
